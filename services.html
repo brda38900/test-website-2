@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخدمات - شركة التسويق</title>
+    <link rel="icon" href="ico/HTML_30926.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: right;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .service {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="testimonials.html">الشهادات</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="blog.html">المدونة</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+    </nav>
+
+    <section>
+        <h2>خدماتنا</h2>
+        <div class="service">
+            <h3>التسويق الرقمي</h3>
+            <p>نقدم حلول تسويقية رقمية مبتكرة تشمل SEO، PPC، وتحليل البيانات.</p>
+        </div>
+        <div class="service">
+            <h3>إدارة وسائل التواصل</h3>
+            <p>نساعدك على إدارة حساباتك على وسائل التواصل الاجتماعي وتحقيق التفاعل.</p>
+        </div>
+        <div class="service">
+            <h3>استراتيجيات التسويق</h3>
+            <p>نقدم استراتيجيات تسويقية مخصصة تلبي احتياجات عملائك.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 شركة التسويق. جميع الحقوق محفوظة.</p>
+    </footer>
+    <a href="#" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; background: #1a73e8; color: white; padding: 10px; border-radius: 5px; display: none;">عودة إلى الأعلى</a>
+
+<script>
+    // إظهار زر العودة إلى الأعلى عند التمرير
+    window.onscroll = function() {
+        var backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // عند الضغط على الزر، يتم العودة إلى الأعلى
+    document.getElementById("backToTop").onclick = function() {
+        document.body.scrollTop = 0; // لمتصفح Safari
+        document.documentElement.scrollTop = 0; // لمتصفحات أخرى
+    };
+</script>
+
+
+</body>
+</html>

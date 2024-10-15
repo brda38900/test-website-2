@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - شركة التسويق</title>
+    <link rel="icon" href="ico/HTML_30926.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            background-image: url('background.jpg'); /* إضافة صورة خلفية */
+            background-size: cover;
+            background-position: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: right;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .services, .testimonials {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .service, .testimonial {
+            margin: 0 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            transition: transform 0.3s;
+        }
+        .service:hover, .testimonial:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a73e8;
+            color: white;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مرحبًا بك في شركة التسويق</h1>
+        <p>نحن نقدم حلول تسويقية مبتكرة.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="testimonials.html">الشهادات</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="blog.html">المدونة</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+    </nav>
+
+    <section>
+        <h2>نحن هنا لمساعدتك على النجاح!</h2>
+        <p>اكتشف المزيد حول خدماتنا، شهادات عملائنا، وتواصل معنا.</p>
+    </section>
+
+    <section>
+        <h2>خدماتنا المختصرة</h2>
+        <div class="services">
+            <div class="service">
+                <h3>التسويق الرقمي</h3>
+                <p>حلول تسويقية رقمية مخصصة.</p>
+            </div>
+            <div class="service">
+                <h3>إدارة وسائل التواصل</h3>
+                <p>إدارة حساباتك لتحقيق تفاعل أكبر.</p>
+            </div>
+        </div>
+        <a href="services.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #1a73e8; color: white; text-decoration: none; border-radius: 5px;">اقرأ المزيد عن خدماتنا</a>
+    </section>
+
+    <section>
+        <h2>شهادات عملائنا</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"خدمة رائعة! حصلنا على نتائج ممتازة."</p>
+            </div>
+            <div class="testimonial">
+                <p>"تجربة استثنائية! أنصح بها بشدة."</p>
+            </div>
+        </div>
+        <a href="testimonials.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #1a73e8; color: white; text-decoration: none; border-radius: 5px;">اقرأ المزيد من الشهادات</a>
+    </section>
+
+    <footer>
+        <p>© 2024 شركة التسويق. جميع الحقوق محفوظة.</p>
+        <div class="social-icons">
+            <a href="#">فيسبوك</a>
+            <a href="#">تويتر</a>
+            <a href="#">إنستغرام</a>
+        </div>
+    </footer>
+    <a href="#" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; background: #1a73e8; color: white; padding: 10px; border-radius: 5px; display: none;">عودة إلى الأعلى</a>
+
+<script>
+    // إظهار زر العودة إلى الأعلى عند التمرير
+    window.onscroll = function() {
+        var backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // عند الضغط على الزر، يتم العودة إلى الأعلى
+    document.getElementById("backToTop").onclick = function() {
+        document.body.scrollTop = 0; // لمتصفح Safari
+        document.documentElement.scrollTop = 0; // لمتصفحات أخرى
+    };
+</script>
+
+
+</body>
+</html>
